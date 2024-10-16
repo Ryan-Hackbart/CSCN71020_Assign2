@@ -41,7 +41,7 @@ void main() {
 			}
 			case 5:
 			{
-				printf("\nThe Rectangle has an area of %i\n\n", getArea(&length, &width));
+				printf("\nThe Rectangle has an area of %i\n\n", getArea(length, width));
 				break;
 			}
 			case 6:
@@ -87,8 +87,8 @@ int getPerimeter(int length, int width) {
 	return perimeter;
 }
 
-int getArea(int *length, int *width) {
-	int area = *length * *width;
+int getArea(int length, int width) {
+	int area = length * width;
 	return area;
 }
 

@@ -4,7 +4,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 extern "C" int getPerimeter(int length, int width);
-extern "C" int getArea(int *length, int *width);
+extern "C" int getArea(int length, int width);
 
 namespace TASK1UNITTEST
 {
