@@ -36,7 +36,7 @@ void main() {
 			}
 			case 4:
 			{
-				printf("\nThe Rectangle has a perimeter of %i\n\n", getPerimeter(&length, &width));
+				printf("\nThe Rectangle has a perimeter of %i\n\n", getPerimeter(length, width));
 				break;
 			}
 			case 5:
@@ -82,8 +82,8 @@ void setWidth(int input, int *width) {
 	}
 }
 
-int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+int getPerimeter(int length, int width) {
+	int perimeter = length + length + width;
 	return perimeter;
 }
 
